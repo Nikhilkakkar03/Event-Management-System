@@ -1,0 +1,213 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple-Blue Gradient */
+    color: white;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 15px;
+    font-size: 18px;
+    background: linear-gradient(to right, #ff00ff, #00eaff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* Profile Section */
+.profile-section {
+    padding: 50px 20px;
+}
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.username {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Events Section */
+.featured-events {
+    padding: 50px 20px;
+}
+
+.featured-events h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.event-card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* Call to Action Section */
+.cta {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .event-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 90%;
+    }
+}

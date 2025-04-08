@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple-Blue Gradient */
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00eaff; /* Neon Cyan */
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background: #00eaff;
+    color: #000;
+    border-radius: 8px;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    background: linear-gradient(to right, #ff00ff, #00eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    color: #ddd;
+    opacity: 0.9;
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(to right, #ff00ff, #00eaff); /* Neon Pink & Cyan */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(to right, #00eaff, #ff00ff);
+    transform: scale(1.1);
+}
+
+/* Event Section */
+.event-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-card {
+    background: linear-gradient(to right, #8a2be2, #4b0082); /* Deep Purple Shades */
+    padding: 20px;
+    width: 270px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid #fff;
+}
+
+.event-card h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+textarea {
+    height: 100px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .event-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
